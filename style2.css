@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Very light gray background */
+    color: #2c3e50; /* Dark slate gray */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4db6ac, #5b7f9e, #e1e1e1); /* Milder multi-colored gradient */
+    color: white;
+    padding: 2.5rem 1rem; /* Responsive padding */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for a bolder look */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase; /* Make header text uppercase */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Enhanced shadow for header */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Inline-block for better spacing */
+    margin: 0 15px; /* Increased margin for better spacing */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none;
+    padding: 8px 15px; /* Increased padding for larger hover area */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3b4f6b; /* Darker navy blue for hover */
+    color: #ffe281; /* Light yellow for text color on hover */
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 15px; /* Responsive padding */
+    max-width: 900px; /* Increased max width */
+    margin: 20px auto; /* Center the main content */
+    background-color: white; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for content area */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff8e1; /* Light beige for sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+h2 {
+    color: #4db6ac; /* Teal for section titles */
+    font-size: 2rem; /* Increased section title size */
+    margin-bottom: 15px; /* Space below headings */
+    border-bottom: 2px solid #4db6ac; /* Underline effect */
+    padding-bottom: 10px; /* Space below underline */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Shadow for section titles */
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px; /* Indent list items */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 15px; /* Responsive padding */
+    background: linear-gradient(135deg, #4db6ac, #5b7f9e, #e1e1e1); /* Matching gradient to header */
+    color: #2c3e50; /* Dark slate gray for text */
+    margin-top: 20px; /* Space above footer */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for footer */
+}
+
+/* Link Styles */
+footer a {
+    color: #ff6f61; /* Coral for links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 2.5rem; /* Adjust header size */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Slightly reduce spacing for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links vertically on smaller screens */
+        margin: 10px 0;
+        text-align: center; /* Center align on small screens */
+    }
+    
+    main {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Adjust section title size */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+}
